@@ -3,10 +3,10 @@ AIGC:
   ContentProducer: '001191110102MAD55U9H0F10002'
   ContentPropagator: '001191110102MAD55U9H0F10002'
   Label: '1'
-  ProduceID: '745b974e-b2d9-4e0d-b804-6274ad471ae2'
-  PropagateID: '745b974e-b2d9-4e0d-b804-6274ad471ae2'
-  ReservedCode1: 'fe494ec0-29f8-4cf5-bc11-147008d65f8f'
-  ReservedCode2: 'fe494ec0-29f8-4cf5-bc11-147008d65f8f'
+  ProduceID: '2ab973a7-e422-4684-8298-475d4d9e286d'
+  PropagateID: '2ab973a7-e422-4684-8298-475d4d9e286d'
+  ReservedCode1: '3bff9119-f397-4b3a-bf2e-0e9cb94a5e2c'
+  ReservedCode2: '3bff9119-f397-4b3a-bf2e-0e9cb94a5e2c'
 ---
 
 # Acer Aspire E1-570G Hackintosh (OpenCore + macOS Monterey 12.7.6)
@@ -48,6 +48,14 @@ EFI/
     └── Tools/                   # CleanNvram / OpenShell
 ```
 
+## 仓库文件说明
+
+| 文件 | 用途 |
+| ---- | ---- |
+| `EFI/` | OpenCore 引导，部署到 ESP 分区（必装） |
+| `PatchHD4000.zip` | HD4000 显卡补丁工具（必装，使用方法见「显卡补丁」步骤） |
+| `README.md` | 本文档 |
+
 ## 安装步骤
 
 > 以下步骤基于「已有 macOS 分区（Mojave 或空分区）+ Windows 双系统」的场景；全新安装从第 1 步开始。
@@ -56,7 +64,7 @@ EFI/
 
 - 8GB 以上 U 盘
 - macOS Monterey 安装器（App Store 下载或 `installinstallmacos.py`）
-- 下载 **Patch-HD4000-Monterey**（chris1111，用于 HD4000 显卡补丁）：https://github.com/chris1111/Patch-HD4000-Monterey
+- **显卡补丁工具 `PatchHD4000.zip` 已包含在本仓库**，无需另行下载
 
 ### 2. 制作安装 U 盘（Mac 下执行）
 
@@ -85,11 +93,25 @@ sudo /Applications/Install\ macOS\ Monterey.app/Contents/Resources/createinstall
 
 ### 6. 显卡补丁（HD4000 全加速）
 
-- 系统默认 HD4000 只有 4MB 显存，需打补丁
-- 先确保 SIP 彻底关闭：本 EFI 已配置 `csr-active-config=EF0F0000`
-- 首次配置后需在 OpenCore 菜单执行一次 **CleanNvram**
-- 运行 **Patch-HD4000-Monterey** 应用 → 按提示打补丁 → 重启
-- 验证：关于本机 → 显示卡，显存恢复正常
+系统默认 HD4000 只有 4MB 显存，必须用 **PatchHD4000** 工具打补丁。前提：SIP 已彻底关闭（本 EFI 已配置 `csr-active-config=EF0F0000`），且改过配置后在 OpenCore 菜单执行过一次 **CleanNvram**。
+
+**PatchHD4000 使用方法：**
+
+1. 从本仓库下载 `PatchHD4000.zip`，复制到 Mac（放 NTFS 盘 Mac 也能直接读，或用 U 盘拷贝）
+2. 在 Mac 里双击解压，得到 **PatchHD4000** 应用
+3. 首次使用先在终端执行（跳过开发者验证拦截）：
+   ```
+   sudo spctl --master-disable
+   ```
+   （输入开机密码，屏幕不显示是正常的）
+4. 双击运行 PatchHD4000；若提示"来自身份不明的开发者"：右键点它 → **打开** → 再点"打开"
+5. 按界面提示操作（工具会自动检测 HD4000），过程中输入开机密码授权
+6. 补丁完成后按提示**重启**
+7. 验证：苹果菜单 → 关于本机 → 显卡显存恢复正常（不再是 4MB）、系统动画流畅
+
+> 若运行报错 -1713：重启一次 Mac 再运行即可（工具官方说明）。
+>
+> **备选方案**：OpenCore Legacy Patcher（OCLP）也能打补丁，但本 EFI 机型伪装为受支持的 MacBookPro12,1，OCLP 会误判"无需补丁"导致按钮灰色，故本仓库统一使用 PatchHD4000。OCLP 下载：https://github.com/dortania/OpenCore-Legacy-Patcher/releases（安装包约 738MB，超出 GitHub 单文件 100MB 限制，未收入本仓库）
 
 ### 7. 声卡
 
