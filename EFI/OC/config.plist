@@ -13,7 +13,8 @@
 				<true/>
 				<key>Path</key>
 				<string>SSDT-Disable-DGPU.aml</string>
-			</dict>			<dict>
+			</dict>
+			<dict>
 				<key>Comment</key>
 				<string>E1 platform patch</string>
 				<key>Enabled</key>
@@ -61,8 +62,7 @@
 				<key>Path</key>
 				<string>ssdt.aml</string>
 			</dict>
-
-					<dict>
+			<dict>
 				<key>Comment</key>
 				<string>HDEF device for ALC282</string>
 				<key>Enabled</key>
@@ -70,7 +70,7 @@
 				<key>Path</key>
 				<string>SSDT-HDEF.aml</string>
 			</dict>
-</array>
+		</array>
 		<key>Delete</key>
 		<array/>
 		<key>Patch</key>
@@ -83,23 +83,31 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>X1E4RQ==</data>
+				<data>
+				X1E4RQ==
+				</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>OemTableId</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Replace</key>
-				<data>WFE4RQ==</data>
+				<data>
+				WFE4RQ==
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data></data>
+				<data>
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -109,23 +117,31 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>X1E4Rg==</data>
+				<data>
+				X1E4Rg==
+				</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>OemTableId</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Replace</key>
-				<data>WFE4Rg==</data>
+				<data>
+				WFE4Rg==
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data></data>
+				<data>
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -135,23 +151,31 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>X0RTTQ==</data>
+				<data>
+				X0RTTQ==
+				</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>OemTableId</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Replace</key>
-				<data>WERTTQ==</data>
+				<data>
+				WERTTQ==
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data></data>
+				<data>
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -161,23 +185,31 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>X1BSVw==</data>
+				<data>
+				X1BSVw==
+				</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>OemTableId</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Replace</key>
-				<data>WFBSVw==</data>
+				<data>
+				WFBSVw==
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data></data>
+				<data>
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -187,23 +219,31 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>X09TSQ==</data>
+				<data>
+				X09TSQ==
+				</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>OemTableId</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Replace</key>
-				<data>WE9TSQ==</data>
+				<data>
+				WE9TSQ==
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data></data>
+				<data>
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -213,23 +253,31 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>R1BSVwI=</data>
+				<data>
+				R1BSVwI=
+				</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>OemTableId</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Replace</key>
-				<data>WFBSVwI=</data>
+				<data>
+				WFBSVwI=
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data></data>
+				<data>
+				</data>
 			</dict>
 			<dict>
 				<key>Comment</key>
@@ -239,25 +287,33 @@
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>FEYFX0NSUwg=</data>
+				<data>
+				FEYFX0NSUwg=
+				</data>
 				<key>Limit</key>
 				<integer>0</integer>
 				<key>Mask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>OemTableId</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Replace</key>
-				<data>FEYFQlVGQQg=</data>
+				<data>
+				FEYFQlVGQQg=
+				</data>
 				<key>ReplaceMask</key>
-				<data></data>
+				<data>
+				</data>
 				<key>Skip</key>
 				<integer>0</integer>
 				<key>TableLength</key>
 				<integer>0</integer>
 				<key>TableSignature</key>
-				<data></data>
+				<data>
+				</data>
 			</dict>
-</array>
+		</array>
 		<key>Quirks</key>
 		<dict>
 			<key>FadtEnableReset</key>
@@ -333,11 +389,11 @@
 			<key>PciRoot(0x0)/Pci(0x1C,0x0)/Pci(0x0,0x0)</key>
 			<dict>
 				<key>device-id</key>
-<data>
-tBYAAA==
-</data>
-<key>compatible</key>
-<string>pci14e4,16b4</string>
+				<data>
+				tBYAAA==
+				</data>
+				<key>compatible</key>
+				<string>pci14e4,16b4</string>
 			</dict>
 			<key>PciRoot(0x0)/Pci(0x1b,0x0)</key>
 			<dict>
@@ -357,6 +413,25 @@ tBYAAA==
 				CQBmAQ==
 				</data>
 				<key>disable-external-gpu</key>
+				<data>
+				AQAAAA==
+				</data>
+			</dict>
+			<key>PciRoot(0x0)/Pci(0x1C,0x1)/Pci(0x0,0x0)</key>
+			<dict>
+				<key>compatible</key>
+				<data>
+				cGNpMTRlNCw0M2Jh
+				</data>
+				<key>device-id</key>
+				<data>
+				ukMAAA==
+				</data>
+				<key>subsystem-vendor-id</key>
+				<data>
+				axAAAA==
+				</data>
+				<key>subsystem-id</key>
 				<data>
 				AQAAAA==
 				</data>
@@ -509,7 +584,7 @@ tBYAAA==
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
-					<dict>
+			<dict>
 				<key>Arch</key>
 				<string>x86_64</string>
 				<key>BundlePath</key>
@@ -525,7 +600,21 @@ tBYAAA==
 				<key>PlistPath</key>
 				<string>Contents/Info.plist</string>
 			</dict>
-</array>
+			<dict>
+				<key>Arch</key>
+				<string>x86_64</string>
+				<key>BundlePath</key>
+				<string>AirportBrcmFixup.kext</string>
+				<key>Comment</key>
+				<string>WiFi driver for BCM4352</string>
+				<key>Enabled</key>
+				<true/>
+				<key>ExecutablePath</key>
+				<string>Contents/MacOS/AirportBrcmFixup</string>
+				<key>PlistPath</key>
+				<string>Contents/Info.plist</string>
+			</dict>
+		</array>
 		<key>Block</key>
 		<array/>
 		<key>Emulate</key>
@@ -547,7 +636,7 @@ tBYAAA==
 		<array/>
 		<key>Patch</key>
 		<array>
-						<dict>
+			<dict>
 				<key>Comment</key>
 				<string>BCM5701 device id to 16b4</string>
 				<key>Count</key>
@@ -555,15 +644,19 @@ tBYAAA==
 				<key>Enabled</key>
 				<true/>
 				<key>Find</key>
-				<data>6Mqe//9miYMABQAA</data>
+				<data>
+				6Mqe//9miYMABQAA
+				</data>
 				<key>Identifier</key>
 				<string>com.apple.iokit.CatalinaBCM5701Ethernet</string>
 				<key>MinKernel</key>
 				<string>20.0.0</string>
 				<key>Replace</key>
-				<data>uLQWAABmiYMABQAA</data>
+				<data>
+				uLQWAABmiYMABQAA
+				</data>
 			</dict>
-</array>
+		</array>
 		<key>Quirks</key>
 		<dict>
 			<key>AppleCpuPmCfgLock</key>
